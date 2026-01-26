@@ -1,0 +1,87 @@
+Subsytem Chosen: Student mobile app for Event updates
+
+Outline:
+
+Function Description: Subscribe to Event - Should allow a user to Recive updates on an Event when chosen
+
+Inputs, Outputs and Stored Data:
+
+  Inputs:
+    UserID
+    EventID
+    Timestamp(when the subscription was made)
+    Authentication
+    Notification Prefrances?
+  Outputs:
+    Confirmation Message
+    Error Message? Event is full, already subscribed?
+    Notification Service
+    Subscription Count
+  Stored Data:
+    Subscription Record:
+    SubscriptionID
+    UserID
+    SubscriptionTimestamp
+    SubscriptionStatus (Active/ Cancelled)
+    
+    EventData:
+    EventID
+    EventCap
+    CurrentSubscibers
+
+    User Prefrences:
+    NotificationChannel(email, text, exc)
+    Opt-in/Opt-out
+    
+
+
+Security:
+  Authentication and Identity Verification:
+    Concerns:
+      A user could attemp to subscribe without being authenticated
+      A malicious actor could spoof a UserID
+      Expired or invalid tokens could be reused
+
+  Authorisation:
+    Concerns:
+      A user may try to subscribe to an event they arnt eligable for
+      A user may try to bypass restrictions
+
+  Data Integrity:
+    Concerns: 
+      EventID or UserID could be modified in transit
+      Attackts could manipulate subscription rocords in the database
+      Sublicate or corrupted subscription entries could be created
+
+  Confidentialuty of user Data:
+    Concerns:
+      Subscription records could leak personal data
+      Notification prefrances could reveal sensetive info
+      Unencrypted data can be intercepted
+
+  Secure Communcation:
+    Concerns: 
+      Man-in-the-Middleattcks if HTTPS is not enforced
+      API endpoints could be exposed to unauterised access
+      
+
+Perfoemance:
+
+  Responce time:
+    Subscription confirmation should be returned in accptable time window
+
+  Throughput:
+    Backend should be able to support a high number of requests per second without          slowing down
+
+  Latency:
+    Comunications between microservices must be fast enough to not delay the                subscription process
+
+  Database Efficency:
+    Database lookups e.g. checking event capacity must be efficient
+
+  Scalability under load
+    System shouldnt degrade significatly during high trafic periods
+
+Reliability:
+
+Scalability:
