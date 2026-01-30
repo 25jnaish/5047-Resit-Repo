@@ -84,4 +84,34 @@ Perfoemance:
 
 Reliability:
 
+  Consistent Processing
+    Requests shouldnt fail unpredictabably or produce unperedictable results
+
+  Accurate storage of subscription data
+    Subscription records should not be lost, duplicated or corrupted
+
+  Handling of temporary service faliures
+    If one service is unavalible the system should retry or fail in a way that makes it clear what went wrong
+
+  Reliable comunication between microsrvices
+    There should be no dropped messages or out of sync data between services
+
+  Fault tolarance
+    The system should continue even if part of it fails, e.g. even if a notification doesnt go through, the subscription still happens
+
 Scalability:
+
+  Handling large nubers of users
+    The system should not slow down when handeling increased numbers of users
+
+  Scaling microservices
+    each service should be able to scale indipendatly of other services
+
+  Database scalability
+    The database should be able to handle higher loads without faliures or delays
+
+  Load balencing
+    No single service instance should become overloaded
+
+  
+
