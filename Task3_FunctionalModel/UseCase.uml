@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Nn8wcP3SEfCWcaKGk7oCcA" name="5047 Resit">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_N2kbQP3SEfCWcaKGk7oCcA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_MmRA0ADOEfGkYIoxf2unUw" name="Student Mobile App" useCase="_pCgX8ADOEfGkYIoxf2unUw _CJK6YADPEfGkYIoxf2unUw _J96pEADPEfGkYIoxf2unUw _T1l40ADPEfGkYIoxf2unUw _X0-fgADPEfGkYIoxf2unUw _mh9RUADPEfGkYIoxf2unUw _ttfD4ADPEfGkYIoxf2unUw">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_pCgX8ADOEfGkYIoxf2unUw" name="Receive Notifications" subject="_MmRA0ADOEfGkYIoxf2unUw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_CJK6YADPEfGkYIoxf2unUw" name="Save to Favourites" subject="_MmRA0ADOEfGkYIoxf2unUw">
+      <extend xmi:type="uml:Extend" xmi:id="_P0fa4ADPEfGkYIoxf2unUw" extendedCase="_J96pEADPEfGkYIoxf2unUw" extensionLocation="_P0ieMADPEfGkYIoxf2unUw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_J96pEADPEfGkYIoxf2unUw" name="Filter Events" subject="_MmRA0ADOEfGkYIoxf2unUw">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_P0ieMADPEfGkYIoxf2unUw" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_T1l40ADPEfGkYIoxf2unUw" name="Subscribe to Event" subject="_MmRA0ADOEfGkYIoxf2unUw">
+      <include xmi:type="uml:Include" xmi:id="_8zv4YADPEfGkYIoxf2unUw" addition="_mh9RUADPEfGkYIoxf2unUw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_X0-fgADPEfGkYIoxf2unUw" name="Unsubscribe from Event" subject="_MmRA0ADOEfGkYIoxf2unUw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_mh9RUADPEfGkYIoxf2unUw" name="View Event Details" subject="_MmRA0ADOEfGkYIoxf2unUw">
+      <include xmi:type="uml:Include" xmi:id="_6xXJ4ADPEfGkYIoxf2unUw" addition="_ttfD4ADPEfGkYIoxf2unUw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ttfD4ADPEfGkYIoxf2unUw" name="View Events" subject="_MmRA0ADOEfGkYIoxf2unUw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_e1kp4ADOEfGkYIoxf2unUw" name="Student"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TPcCUADQEfGkYIoxf2unUw" memberEnd="_TPqr0ADQEfGkYIoxf2unUw _TPtvIADQEfGkYIoxf2unUw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TPpdsADQEfGkYIoxf2unUw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TPpdsQDQEfGkYIoxf2unUw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TPqr0ADQEfGkYIoxf2unUw" name="unsubscribe from event" type="_X0-fgADPEfGkYIoxf2unUw" association="_TPcCUADQEfGkYIoxf2unUw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TPtvIADQEfGkYIoxf2unUw" name="student" type="_e1kp4ADOEfGkYIoxf2unUw" association="_TPcCUADQEfGkYIoxf2unUw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UIiNgADQEfGkYIoxf2unUw" memberEnd="_UIkCsQDQEfGkYIoxf2unUw _UIkCsgDQEfGkYIoxf2unUw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UIjboADQEfGkYIoxf2unUw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UIkCsADQEfGkYIoxf2unUw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UIkCsQDQEfGkYIoxf2unUw" name="save to favourites" type="_mh9RUADPEfGkYIoxf2unUw" association="_UIiNgADQEfGkYIoxf2unUw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UIkCsgDQEfGkYIoxf2unUw" type="_e1kp4ADOEfGkYIoxf2unUw" association="_UIiNgADQEfGkYIoxf2unUw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W2N7wADQEfGkYIoxf2unUw" memberEnd="_W2Pw8ADQEfGkYIoxf2unUw _W2Pw8QDQEfGkYIoxf2unUw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_W2PJ4ADQEfGkYIoxf2unUw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_W2PJ4QDQEfGkYIoxf2unUw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_W2Pw8ADQEfGkYIoxf2unUw" name="subscribe to event" type="_T1l40ADPEfGkYIoxf2unUw" association="_W2N7wADQEfGkYIoxf2unUw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_W2Pw8QDQEfGkYIoxf2unUw" name="student" type="_e1kp4ADOEfGkYIoxf2unUw" association="_W2N7wADQEfGkYIoxf2unUw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cQTl4ADQEfGkYIoxf2unUw" memberEnd="_cQU0AgDQEfGkYIoxf2unUw _cQU0AwDQEfGkYIoxf2unUw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cQU0AADQEfGkYIoxf2unUw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cQU0AQDQEfGkYIoxf2unUw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cQU0AgDQEfGkYIoxf2unUw" name="view events" type="_ttfD4ADPEfGkYIoxf2unUw" association="_cQTl4ADQEfGkYIoxf2unUw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cQU0AwDQEfGkYIoxf2unUw" type="_e1kp4ADOEfGkYIoxf2unUw" association="_cQTl4ADQEfGkYIoxf2unUw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_o3XNAADQEfGkYIoxf2unUw" memberEnd="_o3ZpQgDQEfGkYIoxf2unUw _o3aQUADQEfGkYIoxf2unUw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_o3ZpQADQEfGkYIoxf2unUw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_o3ZpQQDQEfGkYIoxf2unUw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_o3ZpQgDQEfGkYIoxf2unUw" name="save to favourites" type="_CJK6YADPEfGkYIoxf2unUw" association="_o3XNAADQEfGkYIoxf2unUw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_o3aQUADQEfGkYIoxf2unUw" type="_e1kp4ADOEfGkYIoxf2unUw" association="_o3XNAADQEfGkYIoxf2unUw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qzYNwADQEfGkYIoxf2unUw" memberEnd="_qzYNwwDQEfGkYIoxf2unUw _qzYNxADQEfGkYIoxf2unUw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qzYNwQDQEfGkYIoxf2unUw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qzYNwgDQEfGkYIoxf2unUw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qzYNwwDQEfGkYIoxf2unUw" name="filter events" type="_J96pEADPEfGkYIoxf2unUw" association="_qzYNwADQEfGkYIoxf2unUw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qzYNxADQEfGkYIoxf2unUw" name="student" type="_e1kp4ADOEfGkYIoxf2unUw" association="_qzYNwADQEfGkYIoxf2unUw"/>
+  </packagedElement>
+</uml:Model>
